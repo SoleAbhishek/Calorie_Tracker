@@ -207,6 +207,38 @@ body {
     }
 }
 
+.why-use-section {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.feature-box {
+    display: inline-flex;
+    align-items: center;
+    background: #f9f9f9; /* Light background */
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 24px;
+    color: #28a745; /* Green color */
+    margin-right: 10px;
+}
+
+.feature-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
 
 
 /* Sections */
