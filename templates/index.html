@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Detector</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Calorie Detector</div>
+        <ul>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#upload-section">Try It</a></li>
+        </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Calorie Detector</h1>
+            <p>Upload a meal image and get an instant calorie estimate.</p>
+            <a href="#upload-section" class="cta-btn">Try It Now</a>
+        </div>
+    </section>
+    
+
+        <!-- How It Works Section -->
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <img src="/static/images/segmentation.jpg" alt="Segmentation">
+                <p>⚙️ Segmentation Using Mask-RCNN</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <img src="/static/images/object_detection.jpg" alt="Object Detection">
+                <p>🔎 Object Detection using YOLOv8</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <img src="/static/images/output.png" alt="Calorie Estimation">
+                <p>🔥 Calculating Calorie Count</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Use Calorie Detector?</h2>
+        <div class="feature-list">
+            <div class="feature">✅ AI-Powered Detection</div>
+            <div class="feature">✅ Accurate Calorie Estimation</div>
+            <div class="feature">✅ Simple & Fast</div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section id="upload-section">
+        <h2>Upload Your Meal</h2>
+        <p>Estimating the calories in your food.</p>
+
+        <div class="container">
+            <div id="image-preview-container">
+                <img id="image-preview" src="" alt="Your Meal" />
+            </div>
+
+            <input type="file" id="file-input" accept="image/*" hidden />
+            <button id="upload-button">Upload Image</button>
+
+            <div id="loading-messages">
+                <p id="loading-text"></p>
+            </div>
+
+            <div id="results">
+                <p id="food-item"></p>
+                <p id="calorie-count"></p>
+            </div>
+
+            <p id="error-message"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Calorie Detector. All rights reserved.</p>
+    </footer>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
